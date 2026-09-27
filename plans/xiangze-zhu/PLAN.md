@@ -1,8 +1,8 @@
-> Xiangze.Zhu 的开发计划，关联任务 [#4](https://github.com/suiyisuixing/quant-learning-studio/issues/4)。本文件是本人 PLAN，不是已完成记录；实施范围须由 Yu 按 ACCESS_MODEL 的精确 PLAN blob 批准后生效。
+> Xingze.Zhu 的开发计划，关联任务 [#4](https://github.com/suiyisuixing/quant-learning-studio/issues/4)。本文件是本人 PLAN，不是已完成记录；实施范围须由 Yu 按 ACCESS_MODEL 的精确 PLAN blob 批准后生效。
 
 # 我的开发计划｜R3（仅四名开发者填写）
 
-- 显示名：Xiangze.Zhu（历史别名 Xingze.Zhu，同一人）
+- 显示名：Xingze.Zhu（历史别名 Xiangze.Zhu，同一人）
 - GitHub login / URL：trave1er999 · https://github.com/trave1er999
 - GitHub用户ID：243565339（TEAM_ROSTER 已登记；本人参与确认仍待回复）
 - 对应任务/角色：开发 · 案例与教学内容模块（中美案例、来源、市场差异；结构与查询/比较/校验/测试）
