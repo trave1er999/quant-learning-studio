@@ -1,0 +1,89 @@
+{
+  "registry_version": "1.0.0",
+  "sources": [
+    {
+      "source_id": "src-authored-case-cn",
+      "publisher": "Quant Learning Lab",
+      "title": "自建中国教学案例说明（原创）",
+      "url": null,
+      "retrieved_at": "2026-09-27",
+      "published": null,
+      "material_type": "AUTHORED_LESSON",
+      "license": "项目自制内容，随仓库共享，可公开",
+      "original_locator": "content/cases/cases.json",
+      "usable_for": ["F1", "F2", "F3", "F4"],
+      "review_status": "APPROVED",
+      "return_reason": null
+    },
+    {
+      "source_id": "src-authored-case-us",
+      "publisher": "Quant Learning Lab",
+      "title": "自建美国教学案例说明（原创）",
+      "url": null,
+      "retrieved_at": "2026-09-27",
+      "published": null,
+      "material_type": "AUTHORED_LESSON",
+      "license": "项目自制内容，随仓库共享，可公开",
+      "original_locator": "content/cases/cases.json",
+      "usable_for": ["F1", "F2", "F3", "F4"],
+      "review_status": "APPROVED",
+      "return_reason": null
+    },
+    {
+      "source_id": "src-dev-fixture",
+      "publisher": "Quant Learning Lab",
+      "title": "开发合成 fixture（非真实对象）",
+      "url": null,
+      "retrieved_at": "2026-09-27",
+      "published": null,
+      "material_type": "SYNTHETIC_SAMPLE",
+      "license": "项目自制测试数据，仅用于软件与接口检查",
+      "original_locator": "content/cases/cases.json",
+      "usable_for": ["DEV_CHECK"],
+      "review_status": "APPROVED",
+      "return_reason": null
+    },
+    {
+      "source_id": "src-pending-real-cn",
+      "publisher": null,
+      "title": "待后三人提交的中国私募案例来源（尚未收到）",
+      "url": null,
+      "retrieved_at": null,
+      "published": null,
+      "material_type": "PUBLIC_DISCLOSURE",
+      "license": null,
+      "original_locator": null,
+      "usable_for": [],
+      "review_status": "AWAITING_SOURCE",
+      "return_reason": null
+    },
+    {
+      "source_id": "src-pending-real-us",
+      "publisher": null,
+      "title": "待后三人提交的美国私募案例来源（尚未收到）",
+      "url": null,
+      "retrieved_at": null,
+      "published": null,
+      "material_type": "PUBLIC_DISCLOSURE",
+      "license": null,
+      "original_locator": null,
+      "usable_for": [],
+      "review_status": "AWAITING_SOURCE",
+      "return_reason": null
+    },
+    {
+      "source_id": "src-rejected-demo",
+      "publisher": null,
+      "title": "示例：无原始定位且无许可说明的来源",
+      "url": null,
+      "retrieved_at": null,
+      "published": null,
+      "material_type": "PUBLIC_DISCLOSURE",
+      "license": null,
+      "original_locator": null,
+      "usable_for": [],
+      "review_status": "REJECTED",
+      "return_reason": "缺少原文定位（页码/章节）与许可说明，无法核验用途和可得时间；退回补充后重审"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "review_log_version": "1.0.0",
+  "last_updated": "2026-09-27",
+  "records": [
+    {
+      "review_id": "rev-authored-lessons-001",
+      "target": "content/lessons/lessons.json",
+      "target_type": "AUTHORED_CONTENT",
+      "submitter_role": "xiangze-zhu",
+      "received_at": "2026-09-27",
+      "locator": "content/lessons/lessons.json",
+      "purpose": "PRE_PLAN,POST_RUN_LEARNING",
+      "license": "项目自制，随仓库共享可公开",
+      "available_from": "2026-09-27",
+      "decision": "ACCEPTED",
+      "reason": null
+    },
+    {
+      "review_id": "rev-authored-glossary-001",
+      "target": "content/glossary/glossary.json",
+      "target_type": "AUTHORED_CONTENT",
+      "submitter_role": "xiangze-zhu",
+      "received_at": "2026-09-27",
+      "locator": "content/glossary/glossary.json",
+      "purpose": "PRE_PLAN,POST_RUN_LEARNING",
+      "license": "项目自制，随仓库共享可公开",
+      "available_from": "2026-09-27",
+      "decision": "ACCEPTED",
+      "reason": null
+    },
+    {
+      "review_id": "rev-authored-cases-001",
+      "target": "content/cases/cases.json",
+      "target_type": "AUTHORED_CONTENT",
+      "submitter_role": "xiangze-zhu",
+      "received_at": "2026-09-27",
+      "locator": "content/cases/cases.json",
+      "purpose": "DEVELOPMENT_REFERENCE",
+      "license": "项目自制，随仓库共享可公开",
+      "available_from": "2026-09-27",
+      "decision": "ACCEPTED",
+      "reason": "仅原创教学说明与合成 fixture，不含真实基金业绩；真实私募案例待后三人提交后单独复核。"
+    },
+    {
+      "review_id": "rev-reject-demo-001",
+      "target": "case-real-us-rejected",
+      "target_type": "CASE",
+      "submitter_role": "(示例)",
+      "received_at": "2026-09-27",
+      "locator": null,
+      "purpose": null,
+      "license": null,
+      "available_from": null,
+      "decision": "RETURNED",
+      "reason": "缺少原文定位（页码/章节）与许可说明，无法核验用途与可得时间；退回补充后重审。"
+    }
+  ],
+  "queue": [
+    {
+      "queue_id": "q-yifan-mao",
+      "submitter_role": "yifan-mao",
+      "expected": "论文/资料卡与真人测试记录（research/submissions/yifan-mao/、testing/observations/yifan-mao/）",
+      "status": "AWAITING_SUBMISSION",
+      "received_at": null
+    },
+    {
+      "queue_id": "q-guanjie-xue",
+      "submitter_role": "guanjie-xue",
+      "expected": "论文/资料卡与真人测试记录（research/submissions/guanjie-xue/、testing/observations/guanjie-xue/）",
+      "status": "AWAITING_SUBMISSION",
+      "received_at": null
+    },
+    {
+      "queue_id": "q-yuntao-min",
+      "submitter_role": "yuntao-min",
+      "expected": "论文/资料卡与真人测试记录（research/submissions/yuntao-min/、testing/observations/yuntao-min/）",
+      "status": "AWAITING_SUBMISSION",
+      "received_at": null
+    }
+  ]
+}

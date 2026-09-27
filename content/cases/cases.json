@@ -1,0 +1,154 @@
+{
+  "catalog_version": "1.0.0",
+  "scope": "CASE",
+  "cases": [
+    {
+      "case_id": "case-authored-cn-01",
+      "version": "1.0.0",
+      "market": "CN",
+      "subject": "自建中国教学策略 A（原创说明）",
+      "object_type": "TEACHING_STRATEGY",
+      "material_type": "AUTHORED_LESSON",
+      "currency": "CNY",
+      "period": { "start": "2024-01-02", "end": "2024-12-31" },
+      "source_id": "src-authored-case-cn",
+      "known_fields": {
+        "strategy_category": "多因子教学策略（动量/低波动/活跃度）",
+        "risk_control": "按回撤阈值退出，下一观测日收盘参考成交",
+        "fee_model": "按换手金额收取单边费率"
+      },
+      "unknown_fields": ["fund_net_value", "realized_return", "drawdown_history", "fee_paid"],
+      "limitations": "原创教学说明，不含任何真实基金净值或实测收益；不构成业绩证据或投资建议。",
+      "review_status": "REVIEWED",
+      "return_reason": null
+    },
+    {
+      "case_id": "case-authored-us-01",
+      "version": "1.0.0",
+      "market": "US",
+      "subject": "自建美国教学策略 B（原创说明，较短区间）",
+      "object_type": "TEACHING_STRATEGY",
+      "material_type": "AUTHORED_LESSON",
+      "currency": "USD",
+      "period": { "start": "2024-01-02", "end": "2024-06-28" },
+      "source_id": "src-authored-case-us",
+      "known_fields": {
+        "strategy_category": "等权基准与单指标对照",
+        "risk_control": "现金比例上限，不设止损",
+        "fee_model": "按换手金额收取单边费率"
+      },
+      "unknown_fields": ["fund_net_value", "realized_return", "drawdown_history", "fee_paid"],
+      "limitations": "原创教学说明，不含任何真实基金净值或实测收益；区间较短，不能与全年区间直接比较。",
+      "review_status": "REVIEWED",
+      "return_reason": null
+    },
+    {
+      "case_id": "case-authored-us-02",
+      "version": "1.0.0",
+      "market": "US",
+      "subject": "自建美国教学策略 C（原创说明，全年区间）",
+      "object_type": "TEACHING_STRATEGY",
+      "material_type": "AUTHORED_LESSON",
+      "currency": "USD",
+      "period": { "start": "2024-01-02", "end": "2024-12-31" },
+      "source_id": "src-authored-case-us",
+      "known_fields": {
+        "strategy_category": "多因子教学策略（动量/低波动/活跃度）",
+        "risk_control": "按回撤阈值退出",
+        "fee_model": "按换手金额收取单边费率"
+      },
+      "unknown_fields": ["fund_net_value", "realized_return", "drawdown_history", "fee_paid"],
+      "limitations": "原创教学说明，不含任何真实基金净值或实测收益。",
+      "review_status": "REVIEWED",
+      "return_reason": null
+    },
+    {
+      "case_id": "case-fixture-cn-01",
+      "version": "1.0.0",
+      "market": "CN",
+      "subject": "开发合成样例 CN（fixture）",
+      "object_type": "SYNTHETIC_FIXTURE",
+      "material_type": "SYNTHETIC_SAMPLE",
+      "currency": "CNY",
+      "period": { "start": "2024-01-02", "end": "2024-12-31" },
+      "source_id": "src-dev-fixture",
+      "known_fields": {
+        "strategy_category": "合成样例（仅代码检查）",
+        "risk_control": "无（fixture 不描述真实风控）",
+        "fee_model": "固定示例费率"
+      },
+      "unknown_fields": ["fund_net_value", "realized_return"],
+      "limitations": "仅供代码与接口测试，不代表任何真实公司、基金或市场表现。",
+      "review_status": "REVIEWED",
+      "return_reason": null
+    },
+    {
+      "case_id": "case-fixture-us-01",
+      "version": "1.0.0",
+      "market": "US",
+      "subject": "开发合成样例 US（fixture）",
+      "object_type": "SYNTHETIC_FIXTURE",
+      "material_type": "SYNTHETIC_SAMPLE",
+      "currency": "USD",
+      "period": { "start": "2024-01-02", "end": "2024-12-31" },
+      "source_id": "src-dev-fixture",
+      "known_fields": {
+        "strategy_category": "合成样例（仅代码检查）",
+        "risk_control": "无（fixture 不描述真实风控）",
+        "fee_model": "固定示例费率"
+      },
+      "unknown_fields": ["fund_net_value", "realized_return"],
+      "limitations": "仅供代码与接口测试，不代表任何真实公司、基金或市场表现。",
+      "review_status": "REVIEWED",
+      "return_reason": null
+    },
+    {
+      "case_id": "case-real-cn-pending",
+      "version": "0.1.0",
+      "market": "CN",
+      "subject": "中国私募案例（占位：等待后三人提交并审核来源）",
+      "object_type": "PRIVATE_FUND_REAL",
+      "material_type": "PUBLIC_DISCLOSURE",
+      "currency": "CNY",
+      "period": null,
+      "source_id": "src-pending-real-cn",
+      "known_fields": {},
+      "unknown_fields": ["strategy_category", "risk_control", "fee_model", "fund_net_value", "realized_return", "period"],
+      "limitations": "尚未收到后三人提交的原始资料卡与原文定位；未核验前不用于正式解释，也不得补写业绩数字。",
+      "review_status": "UNREVIEWED",
+      "return_reason": null
+    },
+    {
+      "case_id": "case-real-us-pending",
+      "version": "0.1.0",
+      "market": "US",
+      "subject": "美国私募案例（占位：等待后三人提交并审核来源）",
+      "object_type": "PRIVATE_FUND_REAL",
+      "material_type": "PUBLIC_DISCLOSURE",
+      "currency": "USD",
+      "period": null,
+      "source_id": "src-pending-real-us",
+      "known_fields": {},
+      "unknown_fields": ["strategy_category", "risk_control", "fee_model", "fund_net_value", "realized_return", "period"],
+      "limitations": "尚未收到后三人提交的原始资料卡与原文定位；未核验前不用于正式解释，也不得补写业绩数字。",
+      "review_status": "UNREVIEWED",
+      "return_reason": null
+    },
+    {
+      "case_id": "case-real-us-rejected",
+      "version": "0.1.0",
+      "market": "US",
+      "subject": "示例：因缺原文定位与许可被退回的案例",
+      "object_type": "PRIVATE_FUND_REAL",
+      "material_type": "PUBLIC_DISCLOSURE",
+      "currency": "USD",
+      "period": null,
+      "source_id": "src-rejected-demo",
+      "known_fields": {},
+      "unknown_fields": ["strategy_category", "risk_control", "fee_model", "fund_net_value", "realized_return", "period"],
+      "limitations": "来源未通过复核，不得用于展示或解释。",
+      "review_status": "REJECTED",
+      "return_reason": "缺少原文定位（页码/章节）与许可说明，无法核验用途和可得时间；退回补充后重审"
+    }
+  ]
+}
