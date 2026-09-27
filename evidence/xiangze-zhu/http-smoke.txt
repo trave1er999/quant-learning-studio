@@ -1,0 +1,27 @@
+# Xiangze.Zhu R3 real HTTP smoke (uvicorn 127.0.0.1:8137, out-of-process)
+# commit: 4c634c4b4247e0cb7499313f816853e997f48ca4
+
+### GET /api/catalog/markets
+HTTP 200
+{"markets":[{"market":"CN","currency":"CNY","total":3,"reviewed":2,"pending":1},{"market":"US","currency":"USD","total":5,"reviewed":3,"pending":1}]}
+### GET /api/catalog/cases?market=CN
+HTTP 200
+{"catalog_version":"1.0.0","cases":[{"case_id":"case-authored-cn-01","version":"1.0.0","market":"CN","subject":"自建中国教学策略 A（原创说明）","object_type":"TEACHING_STRATEGY","material_type":"AUTHORED_LESSON","currency":"CNY","period":{"start":"2024-01-02","end":"2024-12-31"},"source_id":"src-authored-case-cn","review_status":"REVIEWED","needs_review":false},{"case_id":"case-fixtu
+### GET /api/catalog/cases/case-authored-cn-01
+HTTP 200
+{"case":{"case_id":"case-authored-cn-01","version":"1.0.0","market":"CN","subject":"自建中国教学策略 A（原创说明）","object_type":"TEACHING_STRATEGY","material_type":"AUTHORED_LESSON","currency":"CNY","period":{"start":"2024-01-02","end":"2024-12-31"},"source_id":"src-authored-case-cn","review_status":"REVIEWED","known_fields":{"strategy_category":"多因子教学策略（动量/低�
+### GET /api/catalog/cases/case-real-us-rejected
+HTTP 403
+{"detail":"案例已退回，不对外提供：case-real-us-rejected"}
+### GET /api/catalog/compare?left=case-authored-cn-01&right=case-authored-us-01
+HTTP 200
+{"left":{"case_id":"case-authored-cn-01","version":"1.0.0","market":"CN","subject":"自建中国教学策略 A（原创说明）","object_type":"TEACHING_STRATEGY","material_type":"AUTHORED_LESSON","currency":"CNY","period":{"start":"2024-01-02","end":"2024-12-31"},"source_id":"src-authored-case-cn","review_status":"REVIEWED"},"right":{"case_id":"case-authored-us-01","version":"1.0.0","market":"US
+### GET /api/catalog/lessons
+HTTP 200
+{"version":"1.0.0","source_id":"src-authored-lessons","review_status":"REVIEWED","lessons":[{"id":"risk","title":"赚钱，就代表风险小吗？","minutes":3,"tag":"先看风险","body":"最终收益只描述起点到终点。最大回撤描述账户从某个高点下跌到后续低点的最大幅度。两种方法可能最后赚得一样多，过程中却让人承担不同的损失。历史最
+### GET /api/catalog/glossary
+HTTP 200
+{"version":"1.0.0","source_id":"src-authored-glossary","review_status":"REVIEWED","terms":[{"term":"最大回撤","definition":"账户从此前最高值跌到后来低点的最大比例。它描述历史过程，不保证未来亏损不会更多。","version":"1.0.0","scope":"GLOSSARY","source_id":"src-authored-glossary","review_status":"REVIEWED"},{"term":"多因子","definition":"将多个观察
+### POST /api/catalog/validate/case (with approved=true)
+HTTP 200
+{"valid":true,"reasons":[],"warnings":["客户端字段 review_status 不具权威性，已忽略；审核状态只能由服务端设置。","客户端字段 approved 不具权威性，已忽略；审核状态只能由服务端设置。"],"normalized":{"case_id":"demo-submit","version":"1.0.0","market":"CN","subject":"demo","object_type":"TEACHING_STRATEGY","material_type":"AUTHORED_LESSON","currency":"CNY","period":{"start":"2024-01-02","end":"2024-12-31"},"source_id":"src-authored-case-cn","known_fields":{"strategy_category":"x"},"unknown_fields":[],"limitations":"demo","review_status":"UNREVIEWED"}}
